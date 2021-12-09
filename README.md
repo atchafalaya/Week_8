@@ -83,6 +83,7 @@ Customer’s Feature Checklist:
 4.	Log in and log out
 5.	Attractive styling
 
+
 Testing Document Outline:
 
 1.	What are we testing?
@@ -96,8 +97,10 @@ We will test by changing each of the employee fields and entering, then doing th
 5.	How will we know we’re done testing?
 
 We will know we are done when all functions have been tested.
+
 Testing:
 	Basic functionality is good. Data is not saved after refreshing browser.
+	
 Test Document:
 
 Purpose: To test the XYZ Company Employee Manager app for functionality
@@ -111,38 +114,50 @@ Entering data, saving data, basic functionality, security check
 
 Test 1: Enter null data
 
-Result: Entering blank name deletes employee but leaves blank where employee name was. Entering blank data in other forms has no effect. 
+	Result: Entering blank name deletes employee but leaves blank where 
+	employee name was. Entering blank data in other forms has no effect. 
 
 Test 2: Entering incorrect phone number
 
-Result: Entering overly long string of numbers or entering letters is not prevented, although console appears to detect “Uncaught RangeError: Maximum call stack size exceeded”
+	Result: Entering overly long string of numbers or entering letters is not prevented, 
+	although console appears to detect “Uncaught RangeError: Maximum call stack size exceeded”
 
 Test 3: Entering long string length in title
 
-Result: No limits on string length in title
+	Result: No limits on string length in title
 
 Test 4: Entering special characters
 
-Result: Special characters can be entered for name, phone number and title without restriction
+	Result: Special characters can be entered for name, phone number and title without restriction
 
-Test 5: Using cancel button
+Test 5: Using cancel button 
 
-Result: Cancel button works
+	Cancel button works
 
-Test 6: Certificate is valid and trusted, connection is secure, resources are served securely
+Test 6: Security 
 
-Test 7: Chrome Lighthouse test returns 100%. Suggests removing non-functional JavaScript for 0.15s saving
+	Certificate is valid and trusted, connection is secure, resources are served securely
+
+Test 7: Speed
+
+	Chrome Lighthouse test returns 100%. Suggests removing non-functional JavaScript for 0.15s saving
 
 Test 8: General visual
 
-Result: Employee ID 4 is actually -4
+	Result: Employee ID 4 is actually -4
 
 Out of Scope:
-		System Integration testing
-		Regression testing
-	Items not tested: None
+
+	System Integration testing
+	Regression testing
+		
+Items not tested: 
+
+	None
 	
-Metrics: 5 out of 5 
+Metrics: 
+
+	5 out of 5 
 
 Test Environment and Tools: Windows 11, Chrome 96.0.4664.45
 
@@ -159,7 +174,8 @@ Recommendations:
 	
 Best Practices:
 
-	Restricting entry of special characters prevents use of unwanted scripting commands and reduces the likelihood of bad data being entered into the system either intentionally or unintentionally.
+	Restricting entry of special characters prevents use of unwanted scripting commands 
+	and reduces the likelihood of bad data being entered into the system either intentionally or unintentionally.
 	
 Exit Criteria: 
 
@@ -167,35 +183,42 @@ Exit Criteria:
 	
 Conclusion:
 
-	Employee Manager is a solid performer that needs a few changes to achieve perfection. Add an email field, make all the entry fields sensitive to string length and content, disallow entering null data.
+	Employee Manager is a solid performer that needs a few changes to achieve perfection. 
+	Add an email field, make all the entry fields sensitive to string length and content, disallow entering null data.
 	
 Definitions, Acronyms, Abbreviations: N/A
 
 Root Cause Analysis
 
 1.	New Features
-a.	Text entries have upper and lower limits
-b.	Phone number entry must be ten digits
-c.	New employees can be added
-2.	Bug fixes
-a.	Text entries have upper and lower limits
-b.	Phone entries must be ten digits
+2.	Text entries have upper and lower limits
+3.	Phone number entry must be ten digits
+4.	New employees can be added
+5.	Bug fixes
+6.	Text entries have upper and lower limits
+7.	Phone entries must be ten digits
 
 Items I’d like to see added: 
 
 1.	A second field for both email and phone
-2.	Notes on design/user flow
-a.	Design is simple, intuitive
-b.	Adding new employees as “New Employee” means erasing the text, raising the potential for mistakes
-c.	New employees can’t be added below the bottom of the browser screen
-3.	What features are listed to be added in the docs?
-a.	Phone numbers will be formatted in US format
-b.	Employee list will be on database and accessed through API
-c.	A search function will be added to filter employee list based on Job Title, Name, and/or ID
-d.	An email address field will be added 
-4.	How do you want to see these features implemented?
-a.	I’d like to see these features implemented for the next release
-5.	Some of the reasons why issues brought up by the customer have not yet been addressed might be that the app is still in the prototype stage, and that the functionality to support the features mentioned by the customer aren’t ready yet.
+
+Notes on design/user flow:
+
+1.	Design is simple, intuitive
+2.	Adding new employees as “New Employee” means erasing the text, raising the potential for mistakes
+3.	New employees can’t be added below the bottom of the browser screen
+
+What features are listed to be added in the docs?
+
+1.	Phone numbers will be formatted in US format
+2.	Employee list will be on database and accessed through API
+3.	A search function will be added to filter employee list based on Job Title, Name, and/or ID
+4.	An email address field will be added 
+
+How do you want to see these features implemented?
+
+1.	I’d like to see these features implemented for the next release
+2.	Some of the reasons why issues brought up by the customer have not yet been addressed might be that the app is still in the prototype stage, and that the functionality to support the features mentioned by the customer aren’t ready yet.
 
 Customer Update Letter:
 
