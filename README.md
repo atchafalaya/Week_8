@@ -1,10 +1,14 @@
 # Week_9
 
 Increasing Confidence and the Purpose of QA
+<br>
 Initial results from inspecting the site:
+<br>
 1.	“Forgot password” function appears to be broken
 2.	Map covers Utah only and has a marker at Lat 0 Long 0
+
 Test items in order:
+
 1.	Create account for renter and user
 2.	Login / log out / log back in
 3.	Create item to rent
@@ -12,10 +16,14 @@ Test items in order:
 5.	Rent an item from owner
 6.	Check owner profile and renter profile
 7.	Review item
+
 Yoodlize Search Test
+
 1.	Search for Rubik’s Cube from home page search produces no results
 2.	Searching Toys and Games catalog for Rubik’s Cube also no results; from page 5 of Advanced Search results in Toys and Games category, no results
+
 Metrics:
+
 1.	Selecting “See All” on the front page for any category only displays about half the pages of items. The rest of the pages show “No Results” when clicked.
 2.	Forgot Password does nothing
 3.	Map covers Utah 
@@ -26,15 +34,22 @@ Metrics:
 8.	Resizing page can take user to a page requesting user download mobile app
 9.	Listings appear in catalog but do not persist on user page
 10.	Posted items cannot be edited
+
 What are some good things about Yoodlize?
+
 1.	Tells a story clearly
 2.	Handles pictures logically and consistently
 3.	Good categorization
 4.	Easy to sign up
+
 Test Report:
-	Yoodlize is a site with great potential, that only needs some attention to a few important details before it can marry a great concept with great execution. 
-	When the user first encounters Yoodlize, they are drawn in immediately by bright colors and friendly, sans-serif fonts. After the user finds the sign-up function, signing up for a new account is easy and intuitive.
-	After a strong start, however, some issues show:
+
+Yoodlize is a site with great potential, that only needs some attention to a few important details before it can marry a great concept with great execution. 
+When the user first encounters Yoodlize, they are drawn in immediately by bright colors and friendly, sans-serif fonts. After the user finds the sign-up function, signing up for a new account is easy and intuitive.
+	
+
+After a strong start, however, some issues show:
+	
 1.	While signing up is easy, if a user forgets their password, the “forgot password” function does not work.
 2.	Once a user posts an item for rent, that item doesn’t stay on their profile page, and it cannot be edited.
 3.	When searching for items through the “See All” links shown on the front page for each category, not all the items will be displayed.
@@ -49,7 +64,9 @@ A: Absolutely. Apparently, nobody told the customer this wasn’t the final prod
 
 2.	Did the QA do a good job responding to the customer’s complaints?
 
-A: The QA did an okay job responding to the customer’s complaints. Too much justification and not enough listening and attempting to try to figure out how they ended up here in the first place. It’s good to address customer dissatisfaction, but better to avoid it in the first place.
+A: The QA did an okay job responding to the customer’s complaints. 
+Too much justification and not enough listening and attempting to try to figure out how they ended up here in the first place. 
+It’s good to address customer dissatisfaction, but better to avoid it in the first place.
 
 3.	Would you address them in a different way?
 
@@ -59,12 +76,15 @@ A: I would definitely address the customer in a different way. If the customer i
 
 The original specifications and any further changes arising from other communications with the customer.
 Customer’s Feature Checklist:
+
 1.	Enter all required data, including email
 2.	Save entered data
 3.	Search for data
 4.	Log in and log out
 5.	Attractive styling
+
 Testing Document Outline:
+
 1.	What are we testing?
 We are testing the data entry, save, and cancel functions
 2.	How long will we test?
@@ -79,44 +99,76 @@ We will know we are done when all functions have been tested.
 Testing:
 	Basic functionality is good. Data is not saved after refreshing browser.
 Test Document:
+
 Purpose: To test the XYZ Company Employee Manager app for functionality
 Application Overview: The Employee Manager app allows the user to enter employee data in the form of an employee card containing field for name, phone number, and employee title. Employees are given an employee ID number that cannot be changed.
+
 Testing Scope:
-	In-Scope: 
+	
+In-Scope: 
+	
 Entering data, saving data, basic functionality, security check
-Test 1: Enter null data 
+
+Test 1: Enter null data
+
 Result: Entering blank name deletes employee but leaves blank where employee name was. Entering blank data in other forms has no effect. 
+
 Test 2: Entering incorrect phone number
+
 Result: Entering overly long string of numbers or entering letters is not prevented, although console appears to detect “Uncaught RangeError: Maximum call stack size exceeded”
+
 Test 3: Entering long string length in title
+
 Result: No limits on string length in title
+
 Test 4: Entering special characters
+
 Result: Special characters can be entered for name, phone number and title without restriction
+
 Test 5: Using cancel button
+
 Result: Cancel button works
+
 Test 6: Certificate is valid and trusted, connection is secure, resources are served securely
+
 Test 7: Chrome Lighthouse test returns 100%. Suggests removing non-functional JavaScript for 0.15s saving
+
 Test 8: General visual
+
 Result: Employee ID 4 is actually -4
-	Out of Scope:
+
+Out of Scope:
 		System Integration testing
 		Regression testing
-	Items not tested: None	
+	Items not tested: None
+	
 Metrics: 5 out of 5 
+
 Test Environment and Tools: Windows 11, Chrome 96.0.4664.45
+
 Lessons Learned:
+
 	Chrome has some testing tools built in
 	Testing may uncover unexpected side effects that force you to go back and redo the tests
+	
 Recommendations:
+
 	Add email field
 	Change Employee ID 4
 	Restrict entry length and use of special characters
+	
 Best Practices:
+
 	Restricting entry of special characters prevents use of unwanted scripting commands and reduces the likelihood of bad data being entered into the system either intentionally or unintentionally.
+	
 Exit Criteria: 
+
 	When all functions have been tested or allotted time is complete
+	
 Conclusion:
+
 	Employee Manager is a solid performer that needs a few changes to achieve perfection. Add an email field, make all the entry fields sensitive to string length and content, disallow entering null data.
+	
 Definitions, Acronyms, Abbreviations: N/A
 
 Root Cause Analysis
@@ -128,7 +180,9 @@ c.	New employees can be added
 2.	Bug fixes
 a.	Text entries have upper and lower limits
 b.	Phone entries must be ten digits
+
 Items I’d like to see added: 
+
 1.	A second field for both email and phone
 2.	Notes on design/user flow
 a.	Design is simple, intuitive
@@ -142,15 +196,28 @@ d.	An email address field will be added
 4.	How do you want to see these features implemented?
 a.	I’d like to see these features implemented for the next release
 5.	Some of the reasons why issues brought up by the customer have not yet been addressed might be that the app is still in the prototype stage, and that the functionality to support the features mentioned by the customer aren’t ready yet.
+
 Customer Update Letter:
-	Hi, I just wanted to tell you about the latest features we’ve added to your app, Employee Manager.
-	Since the last time you saw it, we’ve added the ability to add new employees to the list, and upper and lower limits to the number of characters that can be entered. This should greatly reduce the possibility of faulty entries. No blank entries can be made. The app now saves data until the browser refreshes.
-	The save and cancel buttons are now only available after changes have been made, and the cancel button will revert the entry back to the most recently saved version.
-	We’ve also fixed our error message functions and enabled the save function to work after error messages are sent.
-	We remember how you felt about the style and looks, and hope to have your input incorporated into an upcoming release. We also remember you requested a log-in/log-out function and search function as well, and will be adding those to upcoming releases. 
+
+Hi, I just wanted to tell you about the latest features we’ve added to your app, Employee Manager.
+
+Since the last time you saw it, we’ve added the ability to add new employees to the list, and upper and lower limits to the number of characters that can be entered.
+
+This should greatly reduce the possibility of faulty entries. No blank entries can be made. 
+
+The app now saves data until the browser refreshes.
+The save and cancel buttons are now only available after changes have been made, and the cancel button will revert the entry back to the most recently saved version.
+
+We’ve also fixed our error message functions and enabled the save function to work after error messages are sent.
+
+We remember how you felt about the style and looks, and hope to have your input incorporated into an upcoming release. We also remember you requested a log-in/log-out function and search function as well, and will be adding those to upcoming releases. 
+
 Rather than set specific dates in this letter for those functions, I’d like to put them on the roadmap at the earliest opportunity. How about our upcoming Planning meeting?
+
 QA Manager Report:
-	During this sprint:
+
+During this sprint:
+	
 1.	 Added the “Add New Employee” function
 2.	Save and cancel buttons only work after changes are made
 3.	No blank entries are allowed
