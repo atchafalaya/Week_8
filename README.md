@@ -2,8 +2,8 @@
 
 Increasing Confidence and the Purpose of QA
 Initial results from inspecting the site:
-“Forgot password” function appears to be broken
-Map covers Utah only and has a marker at Lat 0 Long 0
+	“Forgot password” function appears to be broken
+	Map covers Utah only and has a marker at Lat 0 Long 0
 Test items in order:
 1.	Create account for renter and user
 2.	Login / log out / log back in
