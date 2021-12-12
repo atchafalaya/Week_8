@@ -1,6 +1,6 @@
 # Week_9
 
-Increasing Confidence and the Purpose of QA
+### Increasing Confidence and the Purpose of QA
 <br>
 Initial results from inspecting the site:
 <br>
@@ -57,7 +57,7 @@ After a strong start, however, some issues show:
 5.	Items only display when the user who posted them is logged in.
 Those are some of the major issues. I’m sure with a little more time we can give the site a thorough check and help develop an action plan for fixing any problems.
 
-Pilot Support and the Process of QA
+### Pilot Support and the Process of QA
 1.	Was the customer justified with their complaints?
 
 A: Absolutely. Apparently, nobody told the customer this wasn’t the final product.
@@ -188,7 +188,7 @@ Conclusion:
 	
 Definitions, Acronyms, Abbreviations: N/A
 
-Root Cause Analysis
+### Root Cause Analysis
 
 1.	New Features
 2.	Text entries have upper and lower limits
@@ -220,7 +220,7 @@ How do you want to see these features implemented?
 1.	I’d like to see these features implemented for the next release
 2.	Some of the reasons why issues brought up by the customer have not yet been addressed might be that the app is still in the prototype stage, and that the functionality to support the features mentioned by the customer aren’t ready yet.
 
-Customer Update Letter:
+### Customer Update Letter:
 
 Hi, I just wanted to tell you about the latest features we’ve added to your app, Employee Manager.
 
@@ -237,7 +237,7 @@ We remember how you felt about the style and looks, and hope to have your input 
 
 Rather than set specific dates in this letter for those functions, I’d like to put them on the roadmap at the earliest opportunity. How about our upcoming Planning meeting?
 
-QA Manager Report:
+### QA Manager Report:
 
 During this sprint:
 	
@@ -251,5 +251,10 @@ During this sprint:
 8.	Set upper and lower limits on text entry lengths
 9.	Set telephone number entries to ten digits only
 
-Planning and Reporting Results
+### Planning and Reporting Results
 https://trello.com/b/Sr1fLIpp/employee-manager-test-plan
+
+### Wanted Queries Testing
+https://trello.com/b/4Zcr5fZv/wanted-queries-testing
+
+
